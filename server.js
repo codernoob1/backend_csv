@@ -36,6 +36,11 @@ app.get('/company/:name', (req, res) => {
   res.json(data);
 });
 
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
+
+
 const PORT = process.env.PORT || 3001;
 
 const startServer = async () => {
